@@ -37,11 +37,11 @@ Determine the Pod annotations used in the controller
 {{- define "secrets.volumes" }}
 {{ $app := include "hoslog.fullname" . }}
 {{- if .Values.secretsToFile.enabled }}
-{{ range $key := .Values.secretsToFile.secretNames }}
 - name: {{ $app }}
   secret:
     secretName: {{ $app }}
     items:
+{{ range $key := .Values.secretsToFile.secretNames }}
       - key: {{ $key }}
         path: {{ $key }}
 {{ end }}
