@@ -3,6 +3,16 @@ entries:
   hoslog:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-04-06T07:27:34.51849393Z"
+    description: A Helm chart for hoslog application
+    digest: 3119b0354dbf7f0a0fc8950af9ca3e359c85c1d573a79a84e89ff61701d3e07c
+    name: hoslog
+    type: application
+    urls:
+    - https://github.com/globalsquareit-org/helm-charts/releases/download/hoslog-0.1.6/hoslog-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-04-06T05:21:03.660101272Z"
     description: A Helm chart for hoslog application
     digest: 65172d31acf66a95a08c1c1ce207096303fef6ee2589170dcc2eedff38496d89
@@ -41,4 +51,4 @@ entries:
     urls:
     - https://github.com/globalsquareit-org/helm-charts/releases/download/hoslog-0.1.2/hoslog-0.1.2.tgz
     version: 0.1.2
-generated: "2024-04-06T05:21:03.660119907Z"
+generated: "2024-04-06T07:27:34.518527392Z"
