@@ -109,6 +109,10 @@ affinity: {}
 
 secretsToFile:
   enabled: false
+  secretStore:
+    name: secretstore
+    kind: SecretStore
+    refreshInterval: 10s
   secretNames:
     - appsettings.json
 
