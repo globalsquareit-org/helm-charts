@@ -4,7 +4,7 @@ kind: PodDisruptionBudget
 metadata:
   labels:
     {{- include "hoslog.labels" . | nindent 4 }}
-  name: {{ include "application.fullname" . }}
+  name: {{ include "hoslog.fullname" . }}
 spec:
   {{- if .Values.podDisruptionBudget.minAvailable }}
   minAvailable: {{ .Values.podDisruptionBudget.minAvailable }}
