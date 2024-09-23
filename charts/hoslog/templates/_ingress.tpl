@@ -20,7 +20,7 @@ alb.ingress.kubernetes.io/load-balancer-attributes: routing.http2.enabled=true,r
 # alb.ingress.kubernetes.io/ip-address-type: dualstack
 alb.ingress.kubernetes.io/certificate-arn: {{ $arn }}
 {{- if .Values.ingress.annotations }}
-{{ include ".Values.ingress.annotations" . }}
+{{- toYaml .Values.ingress.annotations | nindent 0 }}
 {{- end }}
 {{- end }}
 {{- end }}
